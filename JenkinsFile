@@ -9,10 +9,10 @@ pipeline {
             } 
         } 
  
-        stage('Print Directory') { 
+        stage('Print Message') { 
             steps { 
-                bat 'cd' 
+                echo 'Hello! Jenkins Pipeline executed successfully' 
             } 
         } 
     } 
-}
+} 
