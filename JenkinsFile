@@ -1,5 +1,6 @@
-pipeline {
+pipeline { 
     agent any 
+ 
     stages { 
         stage('Checkout Code') { 
             steps { 
@@ -7,9 +8,10 @@ pipeline {
                     url: 'https://github.com/Jayanise0703/Simpleapp.git' 
             } 
         } 
-        stage('Show Files') { 
+ 
+        stage('Print Directory') { 
             steps { 
-                bat 'dir' 
+                bat 'cd' 
             } 
         } 
     } 
